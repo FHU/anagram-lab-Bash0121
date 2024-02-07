@@ -20,8 +20,8 @@ if __name__ == '__main__':
     u_input2=input()
     if u_input1.isspace()==True:
           print("False")
-
-    print(anagram(u_input1, u_input2))
+    else:
+         print(anagram(u_input1, u_input2))
 
 #Remove capital letters, and compare both strings ACII values.
 #make strings and get the value of every index
