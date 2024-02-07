@@ -4,16 +4,16 @@ def anagram(test1, test2):
     final2=test2.lower()
     for i in final1:
         if final1==" " or final2==" ":
-            return "False"
+            return False
         else:
             if i.isalpha():
                 if i in final2:
                   continue
                 else: 
-                    return "False"
+                    return False
             else:
                 continue
-    return "True"
+    return True
          
     
 if __name__ == '__main__':
