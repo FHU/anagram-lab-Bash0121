@@ -18,7 +18,7 @@ if __name__ == '__main__':
    
     u_input1=input()
     u_input2=input()
-    if u_input1.isspace()==True:
+    if u_input1==" ":
           print("False")
     else:
          print(anagram(u_input1, u_input2))
