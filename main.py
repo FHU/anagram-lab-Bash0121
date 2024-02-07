@@ -3,13 +3,16 @@ def anagram(test1, test2):
     final1=test1.lower()
     final2=test2.lower()
     for i in final1:
-        if i.isalpha():
-            if i in final2:
-                   continue
-            else: 
-                 return False
+        if final1==" ":
+            return "False"
         else:
-             continue
+            if i.isalpha():
+                if i in final2:
+                  continue
+                else: 
+                    return False
+            else:
+                continue
     return True
          
     
