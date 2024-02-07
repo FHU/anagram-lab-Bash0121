@@ -3,17 +3,17 @@ def anagram(test1, test2):
     final1=test1.lower()
     final2=test2.lower()
     for i in final1:
-        if final1==" ":
+        if final1==" " or final2==" ":
             return "False"
         else:
             if i.isalpha():
                 if i in final2:
                   continue
                 else: 
-                    return False
+                    return "False"
             else:
                 continue
-    return True
+    return "True"
          
     
 if __name__ == '__main__':
@@ -21,10 +21,8 @@ if __name__ == '__main__':
    
     u_input1=input()
     u_input2=input()
-    if u_input1==" ":
-          print("False")
-    else:
-         print(anagram(u_input1, u_input2))
+    
+    print(anagram(u_input1, u_input2))
 
 #Remove capital letters, and compare both strings ACII values.
 #make strings and get the value of every index
